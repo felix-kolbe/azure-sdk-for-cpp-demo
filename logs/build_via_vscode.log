@@ -1,0 +1,59 @@
+[main] Configuring project: azure-sdk-for-cpp-demo
+[proc] Executing command: /usr/bin/cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++ -S/workspaces/azure-sdk-for-cpp-demo -B/workspaces/azure-sdk-for-cpp-demo/build -G "Unix Makefiles"
+[cmake] Not searching for unused variables given on the command line.
+[cmake] -- The CXX compiler identification is GNU 11.4.0
+[cmake] -- Detecting CXX compiler ABI info
+[cmake] -- Detecting CXX compiler ABI info - done
+[cmake] -- Check for working CXX compiler: /usr/bin/g++ - skipped
+[cmake] -- Detecting CXX compile features
+[cmake] -- Detecting CXX compile features - done
+[cmake] No transport adapter was selected, using libcurl as the default option for POSIX.
+[cmake] Vcpkg integrate step.
+[cmake] CMAKE_TOOLCHAIN_FILE is not defined. Define it for the user.
+[cmake] AZURE_SDK_DISABLE_AUTO_VCPKG is not defined. Fetch a local copy of vcpkg.
+[cmake] Vcpkg commit string used: 43cf47eccfbe27006cf9534a5db809798f8c37fe
+[cmake] Vcpkg integrate step - DONE.
+[cmake] -- The C compiler identification is GNU 11.4.0
+[cmake] -- Detecting C compiler ABI info
+[cmake] -- Detecting C compiler ABI info - done
+[cmake] -- Check for working C compiler: /usr/bin/gcc - skipped
+[cmake] -- Detecting C compile features
+[cmake] -- Detecting C compile features - done
+[cmake] -- CMAKE_SYSTEM_NAME=Linux;
+[cmake] -- VCPKG_TARGET_TRIPLET=;
+[cmake] Vcpkg integrate step.
+[cmake] Vcpkg integrate step - DONE.
+[cmake] -- Looking for pthread.h
+[cmake] -- Looking for pthread.h - found
+[cmake] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[cmake] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[cmake] -- Found Threads: TRUE
+[cmake] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")
+[cmake] Libcurl version 7.81.0
+[cmake] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[cmake] -- Retrieving version from /workspaces/azure-sdk-for-cpp-demo/build/_deps/azuresdk-src/sdk/core/azure-core/src/private/package_version.hpp
+[cmake] -- VERSION_MAJOR 1
+[cmake] -- VERSION_MINOR 11
+[cmake] -- VERSION_PATCH 0
+[cmake] -- VERSION_PRERELEASE beta.3
+[cmake] -- AZ_LIBRARY_VERSION
+[cmake] -- Including AMQP library
+[cmake] Vcpkg integrate step.
+[cmake] Vcpkg integrate step - DONE.
+[cmake] -- Using vendored uamqp
+[cmake] CMake Error at build/_deps/azuresdk-src/sdk/core/azure-core-amqp/vendor/azure-uamqp-c/CMakeLists.txt:56 (find_package):
+[cmake]   Could not find a package configuration file provided by
+[cmake]   "azure_macro_utils_c" with any of the following names:
+[cmake]
+[cmake]     azure_macro_utils_cConfig.cmake
+[cmake]     azure_macro_utils_c-config.cmake
+[cmake]
+[cmake]   Add the installation prefix of "azure_macro_utils_c" to CMAKE_PREFIX_PATH
+[cmake]   or set "azure_macro_utils_c_DIR" to a directory containing one of the above
+[cmake]   files.  If "azure_macro_utils_c" provides a separate development package or
+[cmake]   SDK, be sure it has been installed.
+[cmake]
+[cmake]
+[cmake] -- Configuring incomplete, errors occurred!
+[cmake] See also "/workspaces/azure-sdk-for-cpp-demo/build/CMakeFiles/CMakeOutput.log".
+[proc] The command: /usr/bin/cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++ -S/workspaces/azure-sdk-for-cpp-demo -B/workspaces/azure-sdk-for-cpp-demo/build -G "Unix Makefiles" exited with code: 1

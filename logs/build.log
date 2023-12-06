@@ -1,0 +1,55 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+No transport adapter was selected, using libcurl as the default option for POSIX.
+Vcpkg integrate step.
+CMAKE_TOOLCHAIN_FILE is not defined. Define it for the user.
+Vcpkg integrate step - DONE.
+-- The C compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMAKE_SYSTEM_NAME=Linux;
+-- VCPKG_TARGET_TRIPLET=;
+Vcpkg integrate step.
+CMAKE_TOOLCHAIN_FILE is not defined. Define it for the user.
+Vcpkg integrate step - DONE.
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+Libcurl version 7.81.0
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Retrieving version from /workspaces/azure-sdk-for-cpp-demo/build/_deps/azuresdk-src/sdk/core/azure-core/src/private/package_version.hpp
+-- VERSION_MAJOR 1
+-- VERSION_MINOR 11
+-- VERSION_PATCH 0
+-- VERSION_PRERELEASE beta.3
+-- AZ_LIBRARY_VERSION 
+-- Including AMQP library
+Vcpkg integrate step.
+CMAKE_TOOLCHAIN_FILE is not defined. Define it for the user.
+Vcpkg integrate step - DONE.
+-- Using vendored uamqp
+CMake Error at build/_deps/azuresdk-src/sdk/core/azure-core-amqp/vendor/azure-uamqp-c/CMakeLists.txt:56 (find_package):
+  Could not find a package configuration file provided by
+  "azure_macro_utils_c" with any of the following names:
+
+    azure_macro_utils_cConfig.cmake
+    azure_macro_utils_c-config.cmake
+
+  Add the installation prefix of "azure_macro_utils_c" to CMAKE_PREFIX_PATH
+  or set "azure_macro_utils_c_DIR" to a directory containing one of the above
+  files.  If "azure_macro_utils_c" provides a separate development package or
+  SDK, be sure it has been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/workspaces/azure-sdk-for-cpp-demo/build/CMakeFiles/CMakeOutput.log".
