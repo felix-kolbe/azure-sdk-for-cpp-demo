@@ -6,8 +6,9 @@ include(FetchContent)
 FetchContent_Declare(
     azuresdk
     GIT_REPOSITORY      https://github.com/Azure/azure-sdk-for-cpp.git
-    GIT_TAG             main
+    GIT_TAG             3a26df28
 )
+set(DISABLE_AZURE_CORE_OPENTELEMETRY ON CACHE INTERNAL "Opentelemetry off")
 FetchContent_GetProperties(azuresdk)
 if(NOT azuresdk_POPULATED)
     FetchContent_Populate(azuresdk)
@@ -28,5 +29,5 @@ if(NOT azuresdk_POPULATED)
 endif()
 
 add_executable(${PROJECT_NAME} sample.cpp)
-target_link_libraries(${PROJECT_NAME} PRIVATE Azure::azure-storage)
+target_link_libraries(${PROJECT_NAME} PRIVATE Azure::azure-storage-blobs)
 # target_link_libraries(${PROJECT_NAME} PRIVATE Azure::azure-identity)
